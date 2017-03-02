@@ -2,14 +2,14 @@
 FROM ubuntu:16.10
 
 # Update Software repository
-RUN apt-get update
+#RUN apt-get update
 
 # Install tint from ubuntu repository
-RUN apt-get install tint
+#RUN apt-get install tint
 
 
 # Demarrage de tint
-COPY start.sh /start.sh
-RUN chmod 777 /start.sh
+#COPY start.sh /start.sh
+#RUN chmod 777 /start.sh
 
 CMD ["/bin/bash"]
