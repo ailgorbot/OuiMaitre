@@ -7,4 +7,7 @@ RUN apt-get update
 # Install tint from ubuntu repository
 RUN apt-get install tint
 
-CMD ["tint"]
+
+# Demarrage de tint
+COPY start.sh /start.sh
+CMD ["./start.sh"]
