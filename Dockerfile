@@ -12,4 +12,4 @@ RUN apt-get install tint
 COPY start.sh /start.sh
 RUN chmod 777 /start.sh
 
-CMD ["./start.sh"]
+CMD ["/bin/bash"]
