@@ -1,6 +1,8 @@
 #Download base image ubuntu 16.10
 FROM ubuntu:16.10
 
+MAINTAINER AilgorBot <ailgorbot@gmail.com>
+
 # Update Software repository
 #RUN apt-get update
 
