@@ -10,4 +10,6 @@ RUN apt-get install tint
 
 # Demarrage de tint
 COPY start.sh /start.sh
+RUN chmod 777 /start.sh
+
 CMD ["./start.sh"]
