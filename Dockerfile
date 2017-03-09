@@ -56,4 +56,4 @@ EXPOSE 8009
 VOLUME /opt/tomcat/webapps
 
 #start tomcat
-CMD /opt/tomcat9/bin/startup.sh
+CMD bash
