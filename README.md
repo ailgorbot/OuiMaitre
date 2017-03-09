@@ -13,7 +13,7 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 
 
 
-How to use this image : 
+#How to use this image
 
 1 - docker pull ailgorbot/ouimaitre
 
