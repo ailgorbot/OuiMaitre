@@ -40,10 +40,7 @@ RUN echo 'export JRE_HOME='/usr/lib/jvm/java-8-oracle/jre'' >> /etc/environment
 ENV JRE_HOME /usr/lib/jvm/java-8-oracle/jre
 
 
-RUN cp /opt/tomcat9/conf/tomcat-users.xml /opt/tomcat9/conf/tomcat-users.ori
 ADD tomcat-users.xml /opt/tomcat9/conf/tomcat-users.xml
-
-RUN /opt/tomcat9/webapps/manager/META-INF/context.xml /opt/tomcat9/webapps/manager/META-INF/context.ori
 ADD context.xml /opt/tomcat9/webapps/manager/META-INF/context.xml
 
 
