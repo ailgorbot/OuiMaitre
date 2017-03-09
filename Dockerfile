@@ -5,6 +5,8 @@ MAINTAINER AilgorBot <ailgorbot@gmail.com>
 
 # Update Repositories
 RUN apt-get update
+RUN apt-get install -y wget
+RUN wget http://archive.raspbian.org/raspbian.public.key -O - | apt-key add -
  
 # Install dependencies
 RUN apt-get install -y curl
@@ -16,7 +18,7 @@ RUN apt-get install -y vim
 # Install java8
 RUN echo "deb http://archive.raspberrypi.org/debian/ jessie main" >> /etc/apt/sources.list.d/raspberrypi.list \
     && apt-get update \
-    && apt-get install -y oracle-java8-jdk \
+    && apt-get install -y --force-yes oracle-java8-jdk \
     && ln -s jdk-8-oracle-arm32-vfp-hflt /usr/lib/jvm/java-8-oracle
 
 
