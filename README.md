@@ -19,7 +19,7 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 
 2 - run a container with this command
 
-docker run -d -p 8080:8080 -p 8009:8009 -v /opt/tomcat/webapps:/opt/tomcat/webapps ailgorbot/ouimaitre
+docker run -it -d -p 8080:8080 -p 8009:8009 -v /opt/tomcat/webapps:/opt/tomcat/webapps ailgorbot/ouimaitre bash
 
 3 - start tomcat with this command
 
