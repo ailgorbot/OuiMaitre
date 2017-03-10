@@ -19,7 +19,7 @@ RUN apt-get install -y vim
 RUN echo "deb http://archive.raspberrypi.org/debian/ jessie main" >> /etc/apt/sources.list.d/raspberrypi.list \
     && apt-get update \
     && apt-get install -y --force-yes oracle-java8-jdk \
-    && ln -s jdk-8-oracle-arm32-vfp-hflt /usr/lib/jvm/java-8-oracle
+    && ln -s /usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt /usr/lib/jvm/java-8-oracle
 
 
 # Install tomcat9
