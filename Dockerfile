@@ -52,7 +52,7 @@ EXPOSE 8080
 EXPOSE 8009
 
 # add volume for webapps folder
-VOLUME /opt/tomcat/webapps
+VOLUME /opt/tomcat9/webapps
 
 #start tomcat
 CMD bash
